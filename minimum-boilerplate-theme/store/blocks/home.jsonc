@@ -1,0 +1,139 @@
+{
+  "store.home": {
+    "blocks": [
+      "slider-layout",
+      "slider-layout#products",
+      "slider-layout#images",
+      "rich-text",
+      "shelf",
+      "flex-layout.row#smartphones",
+      "rich-text#promo",
+      "shelf",
+      "image#live"
+    ]
+  },
+  "slider-layout": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#1", "image#2"]
+  },
+  "image#1": {
+    "props": {}
+  },
+  "image#2": {
+    "props": {}
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "products"
+    },
+    "children": [
+      "image#product1",
+      "image#product2",
+      "image#product3",
+      "image#product4",
+      "image#product5"
+    ]
+  },
+  "image#product1": {
+    "props": {}
+  },
+  "image#product2": {
+    "props": {}
+  },
+  "image#product3": {
+    "props": {}
+  },
+  "image#product4": {
+    "props": {}
+  },
+  "image#product5": {
+    "props": {}
+  },
+  "slider-layout#images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "photos"
+    },
+    "children": ["image#image1", "image#image2", "image#image3"]
+  },
+  "image#image1": {
+    "props": {}
+  },
+  "image#image2": {
+    "props": {}
+  },
+  "image#image3": {
+    "props": {}
+  },
+  "rich-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Novos Produtos"
+    }
+  },
+  "flex-layout.row#smartphones": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "smartphones-block"
+    },
+    "children": ["image#smartphones-banner","list-context.product-list"]
+  },
+  "image#smartphones-banner": {
+    "props": {}
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price"
+    ]
+  },
+
+
+
+  "rich-text#promo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Produtos em Promoção"
+
+    }
+
+  },
+  "image#live":{
+    "props": {
+      "blockClass": "live-banner"
+    }
+  }
+}

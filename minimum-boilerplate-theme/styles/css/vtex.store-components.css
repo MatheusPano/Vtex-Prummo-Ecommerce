@@ -1,0 +1,17 @@
+.logoImage{
+    width: 200px;
+}
+
+.searchBarContainer{
+    padding: 12px;
+    width: 500px;
+}
+
+.searchBarInnerContainer{
+    border: none;
+}
+
+.imageElement--live-banner{
+    margin-left: 20%;
+    margin-top: 50px;
+}

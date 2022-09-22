@@ -1,0 +1,21 @@
+
+.flexRowContent{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 200px;
+} 
+
+/* .flexCol--logotipo{
+    margin-left: 200px;
+} */
+
+.flexRowContent--smartphones-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.flexRowContent--smartphones-block .imageElement{
+    width: 500px;
+    margin-left: 150px;
+}
