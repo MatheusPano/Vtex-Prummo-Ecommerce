@@ -1,0 +1,30 @@
+{
+    "slider-layout#images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 3,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "photos"
+        },
+        "children": ["image#image1", "image#image2", "image#image3"]
+      },
+      "image#image1": {
+        "props": {
+            "src": "assets/imgs/banner/Photo1.png"
+        }
+      },
+      "image#image2": {
+        "props": {
+            "src": "assets/imgs/banner/photo2.png"
+        }
+      },
+      "image#image3": {
+        "props": {
+            "src": "assets/imgs/banner/photo3.png"
+        }
+      }
+}

@@ -1,0 +1,88 @@
+{
+  "flex-layout.row#disc": {
+    "props": {
+      "blockClass": "disc",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#disc"]
+  },
+
+  "flex-layout.col#disc": {
+    "props": {
+      "blockClass": "smartphones-right",
+      "verticalAlign": "middle"
+    },
+    "children": ["rich-text#disc-title", "list-context.product-list#disc"]
+  },
+  "rich-text#disc-title": {
+    "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+      "text": "Produtos em Promoção!",
+      "blockClass": "discount-title"
+    }
+  },
+  "list-context.product-list#disc": {
+    "blocks": ["product-summary.shelf#disc"],
+    "children": ["slider-layout#disc"],
+    "props": {
+      "blockClass": "discount"
+    }
+  },
+
+  "slider-layout#disc": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "discount"
+    }
+  },
+
+  "product-summary.shelf#disc": {
+    "children": [
+        "product-summary-add-to-list-button",
+        "product-summary-image",
+        "product-summary-name",
+        "product-rating-inline",
+        "product-summary-space",
+        "product-summary-price",
+        "product-identifier.summary",
+        "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "disc"
+    }
+  },
+
+  "product-summary-image#disc": {
+    "props": {
+      "showBadge": false,
+      "height": 280
+    }
+  },
+
+  "product-summary-name#disc": {
+    "props": {
+      "blockClass": "discount"
+    }
+  },
+
+  "product-summary-price#disc": {
+    "props": {
+      "blockClass": "discount"
+    }
+  },
+
+  "product-summary-buy-button#disc": {
+    "props": {
+      "blockClass": "discount"
+    }
+  }
+}

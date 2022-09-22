@@ -1,0 +1,38 @@
+{
+    "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "products"
+    },
+    "children": [
+      "image#product1",
+      "image#product2",
+      "image#product3",
+      "image#product4",
+      "image#product5"
+    ]
+  },
+  "image#product1": {
+    "props": {
+        "url": "/informatica"
+    }
+  },
+  "image#product2": {
+    "props": {}
+  },
+  "image#product3": {
+    "props": {}
+  },
+  "image#product4": {
+    "props": {}
+  },
+  "image#product5": {
+    "props": {}
+  }
+}

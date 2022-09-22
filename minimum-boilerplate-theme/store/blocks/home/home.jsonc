@@ -1,0 +1,23 @@
+{
+  "store.home": {
+    "blocks": [
+      "slider-layout#banner",
+      "slider-layout#products",
+      "slider-layout#images",
+      "shelf",
+      "flex-layout.row#smartphones",
+      "flex-layout.row#disc",
+      "image#live"
+  
+    ]
+  },
+
+  "image#live":{
+    "props": {
+      "blockClass": "live-banner"
+    }
+  },
+  "list-context.product-list#newProducts":{
+    "blocks":["product-summary.shelf"]
+  }
+}

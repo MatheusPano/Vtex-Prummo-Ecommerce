@@ -12,10 +12,6 @@
 .flexRowContent--smartphones-block{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
 }
 
-.flexRowContent--smartphones-block .imageElement{
-    width: 500px;
-    margin-left: 150px;
-}
